@@ -4,6 +4,7 @@ public class FixedDepositAccount extends Account {
     private int savingYears;
 
     public FixedDepositAccount(int accountNo, String accountHolderName, double accountBalance, double annualInterestRate, int savingYears) {
+        //super(accountNo, accountHolderName, accountBalance, annualInterestRate);
         this.setAccountNo(accountNo);
         this.setAccountHolderName(accountHolderName);
         this.setAccountBalance(accountBalance);

@@ -7,6 +7,7 @@ public class OverdraftAccount extends Account {
 
     public OverdraftAccount(int accountNo, String accountHolderName, double accountBalance, double annualInterestRate,
             String accountType) {
+        //super(accountNo, accountHolderName, accountBalance, annualInterestRate);
         this.setAccountNo(accountNo);
         this.setAccountHolderName(accountHolderName);
         this.setAccountBalance(accountBalance);
@@ -61,8 +62,11 @@ public class OverdraftAccount extends Account {
 
     @Override
     public double calculateInterest(){
-        if(getAccountBalance()<0){
+        if(getAccountBalance()>0){
             return getAccountBalance()*getAnnualInterestRate();
+        }
+        if(getAccountBalance()==0){
+            return 0;
         }
         else
             return getAccountBalance()*overdraftInterestRate;

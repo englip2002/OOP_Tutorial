@@ -52,7 +52,10 @@ public class Account {
     }
 
     public void cashOut(double cash){
-        accountBalance-=cash;
+        if(cash>accountBalance)
+            System.out.println("Invalid Cash");
+        else
+            accountBalance-=cash;
     }
 
     public double calculateInterest(){

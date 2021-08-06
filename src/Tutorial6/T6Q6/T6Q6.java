@@ -17,7 +17,7 @@ public class T6Q6 {
         System.out.println(fixAcc.toString());
 
         //if cash out 1900 can if 2000 cannot because alrd -100
-        overAcc[2].cashOut(1900);
+        overAcc[2].cashOut(2000);
         System.out.println("The account balance of "+overAcc[2].getAccountHolderName()+" is "+overAcc[2].getAccountBalance());
 
         //fixed account calculate interest
