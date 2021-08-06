@@ -1,11 +1,11 @@
 package Tutorial6.T6Q6;
 
-public class OverdradtAccount extends Account {
+public class OverdraftAccount extends Account {
     private String accountType;
     private double overdraftLimit;
     private double overdraftInterestRate;
 
-    public OverdradtAccount(int accountNo, String accountHolderName, double accountBalance, double annualInterestRate,
+    public OverdraftAccount(int accountNo, String accountHolderName, double accountBalance, double annualInterestRate,
             String accountType) {
         this.setAccountNo(accountNo);
         this.setAccountHolderName(accountHolderName);
