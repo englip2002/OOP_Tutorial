@@ -1,4 +1,4 @@
-package Tutorial6;
+package Tutorial6.T6Q6;
 
 public class T6Q6 {
     public static void main(String[] args) {

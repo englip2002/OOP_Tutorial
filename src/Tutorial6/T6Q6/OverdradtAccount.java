@@ -1,4 +1,4 @@
-package Tutorial6;
+package Tutorial6.T6Q6;
 
 public class OverdradtAccount extends Account {
     private String accountType;
