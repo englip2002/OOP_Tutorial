@@ -1,11 +1,13 @@
 package Tutorial7.T7Q3;
 
 public abstract class AcademicStaff {
+    //protected can be access in same package and their child
     protected double basicSalary;
     protected double transportationAllowance;
     protected double entertainmentAllowance;
     protected double housingAllowance;
     protected int serviceYear;
+
 
     public AcademicStaff(double basicSalary, double transportationAllowance, int serviceYear){
         this.basicSalary=basicSalary;

@@ -8,7 +8,9 @@ public class T7Q3 {
         staff[2]=new ProgramSupervisor(8);
 
         for(int i=0;i<3;i++){
-            staff[i].displayDetail();
+            //it will use the method that overrided but not the AcademicStaff's displayDetail
+            //if no override will use original one
+            staff[i].displayDetail(); 
         }
     }
 }
