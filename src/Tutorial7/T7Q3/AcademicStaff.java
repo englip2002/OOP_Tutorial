@@ -1,6 +1,6 @@
 package Tutorial7.T7Q3;
 
-public abstract class AcademicStaff {
+public abstract class AcademicStaff  {
     //protected can be access in same package and their child
     protected double basicSalary;
     protected double transportationAllowance;
@@ -18,22 +18,6 @@ public abstract class AcademicStaff {
     }
 
     public AcademicStaff(){};
-
-    public double getBasicSalary(){
-        return basicSalary;
-    }
-
-    public void setBasicSalary(double basicSalary){
-        this.basicSalary=basicSalary;
-    }
-
-    public void setTransportationAllowance(double TransportationAllowance){
-        this.transportationAllowance=TransportationAllowance;
-    }
-
-    public double getTransportationAllowance(){
-        return transportationAllowance;
-    }
 
     public double calcEntertainmentAllowance(){
         if(serviceYear>=8){
